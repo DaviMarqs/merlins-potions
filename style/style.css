@@ -19,6 +19,11 @@ font-weight: 700;
 font-style: normal;
 */
 
+
+body {
+  background-color: #fff6da;
+}
+
 /* container header */
 .container-header {
   display: flex;
@@ -63,11 +68,11 @@ font-style: normal;
 }
 */
 
-label {
+ .search {
   position: relative;
 }
 
-label::before {
+ .search::before {
   content: "";
   position: absolute;
   left: 10px;
@@ -132,14 +137,68 @@ input {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 3rem;
+  gap: 2px;
+  margin-left:15%;
 }
   
+
 #cleareance {
     background-color: #422a53;
     margin-right: 4rem;
 }
 
 #potions {
-  padding-left: 2.7rem;
+  padding-left: 5%;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #b9bec9;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+  font-family: droid-sans, sans-serif;
+  font-style: italic;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #422a53;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #523468;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #b9bec9;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #27053f;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

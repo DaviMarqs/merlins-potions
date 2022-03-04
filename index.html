@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merlin's Potions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/uyy5sky.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +23,7 @@
                 <p class="subtitle">    <span>fines potions since 1026</span>    </p>
             </div>
             <div>
-                <label>
+                <label class="search">
                     <input type="search" name="search-potion" id="search-potion" placeholder=" Search our stock">
                 </label>
             </div>
@@ -37,11 +38,70 @@
         </div>
         <nav>
             <ul id="menu">
-                <li id="potions"><a href="#" >Potions</a></li>
-                <li id="ingredients"><a href="#" >Ingredients</a></li>
-                <li id="books"><a href="#" >Books</a></li>
-                <li id="supplies"><a href="#" >Supplies</a></li>
-                <li id="charms"><a href="#" >Charms</a></li>
+                <li id="potions">
+                    <div class="dropdown">
+                        <button class="dropbtn">Potions
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="ingredients">
+                    <div class="dropdown">
+                        <button class="dropbtn">Ingredients
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="books">
+                    <div class="dropdown">
+                        <button class="dropbtn">Books
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="supplies">
+                    <div class="dropdown">
+                        <button class="dropbtn">Supplies
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="charms">
+                    <div class="dropdown">
+                        <button class="dropbtn">Charms
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+                
                 <li id="cleareance"><a href="#">Clearance!</a></li>
                 <li id="sign-in-up"><a href="#">Sign In</a>
                 <span>or</span>
