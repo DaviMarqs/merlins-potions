@@ -1,0 +1,56 @@
+/*
+font-family: 'Oswald', sans-serif;
+
+Droid Sans Regular
+
+font-family: droid-sans, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Droid Sans Bold
+
+font-family: droid-sans, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+*/
+  
+  
+
+  li a {
+    display: flex;
+    color: #b9bec9;
+    text-align: center;
+    padding: 14px  16px;
+    text-decoration: none;
+  }
+
+#menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #523468;
+}
+
+#sign-in-up {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 3rem;
+}
+  
+#cleareance {
+    background-color: #422a53;
+    margin-right: 4rem;
+}
+
+#potions {
+  padding-left: 2.7rem;
+}
