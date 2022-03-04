@@ -19,9 +19,14 @@ font-weight: 700;
 font-style: normal;
 */
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background-color: #fff6da;
+
 }
 
 /* container header */
@@ -30,7 +35,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-top: 4px;
+  margin-bottom: 8px;
 }
 
 .merlins-potions {
@@ -54,11 +59,11 @@ body {
 
 .subtitle {
   color: #523468;
-  font-family: droid-sans, sans-serif;
-  font-style: italic;
   margin-top: 0px;
   font-size: 15px;
   text-decoration:overline;
+  font-family: droid-sans, sans-serif;
+  font-style: italic;
 }
 
 
@@ -88,14 +93,15 @@ input {
 }
 
 .header-text {
+  color: #db5138;
   font-family: droid-sans, sans-serif;
   font-style: italic;
-  color: #db5138;
 }
 
 #content1 {
   font-size: 24px;
 }
+
 /* quebra de linha */
 #content2::before{ 
   content: "\a";
@@ -106,6 +112,8 @@ input {
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-style: normal;
+  color: #d1d2d4;
 }
 
 .bag img {
@@ -130,6 +138,7 @@ input {
   padding: 0;
   overflow: hidden;
   background-color: #523468;
+  border: 0.1px solid #b9bec9;
 }
 
 #sign-in-up {
@@ -139,12 +148,20 @@ input {
   align-items: center;
   gap: 2px;
   margin-left:15%;
+  font-family: droid-sans, sans-serif;
+  font-style: italic;
 }
   
+li  span {
+  color: #9e72bd;
+  font-style: normal;
+}
 
 #cleareance {
     background-color: #422a53;
     margin-right: 4rem;
+    font-family: droid-sans, sans-serif;
+    font-style: italic;
 }
 
 #potions {
@@ -175,6 +192,7 @@ input {
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #422a53;
+  
 }
 
 .dropdown-content {
@@ -184,6 +202,8 @@ input {
   min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  font-family: droid-sans, sans-serif;
+  font-style: italic;
 }
 
 .dropdown-content a {
@@ -201,4 +221,39 @@ input {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* main */
+
+.title {
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+.potion-options img {
+  width: 200px;
+} 
+
+
+.potion-options {
+  margin: 8px;
+
+}
+
+
+.row-potion1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 40px;
+  margin-bottom: 50px;
+}
+
+.row-potion2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 40px;
 }
