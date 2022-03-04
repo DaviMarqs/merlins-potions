@@ -18,9 +18,98 @@ font-weight: 700;
 
 font-style: normal;
 */
-  
-  
 
+/* container header */
+.container-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.merlins-potions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #db5138;
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.logo span {
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #523468;
+  font-family: droid-sans, sans-serif;
+  font-style: italic;
+  margin-top: 0px;
+  font-size: 15px;
+  text-decoration:overline;
+}
+
+
+/*
+#search-potion {
+
+}
+*/
+
+label {
+  position: relative;
+}
+
+label::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 15px;
+  background: url(/assets/fontawnsome/icons/magnifying-glass.svg) center / contain no-repeat;
+
+}
+
+input {
+  padding: 10px 50px;
+}
+
+.header-text {
+  font-family: droid-sans, sans-serif;
+  font-style: italic;
+  color: #db5138;
+}
+
+#content1 {
+  font-size: 24px;
+}
+/* quebra de linha */
+#content2::before{ 
+  content: "\a";
+  white-space: pre;
+}
+
+.bag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bag img {
+  width: 36px;
+  margin: 20px;
+}
+
+
+/* nav bar */
   li a {
     display: flex;
     color: #b9bec9;
