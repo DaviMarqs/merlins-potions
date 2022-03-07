@@ -85,6 +85,8 @@ body {
   bottom: 0;
   width: 15px;
   background: url(/assets/fontawnsome/icons/magnifying-glass.svg) center / contain no-repeat;
+  /* filtro para deixar o ícone da lupa laranja */
+  filter: invert(32%) sepia(77%) saturate(904%) hue-rotate(333deg) brightness(110%) contrast(88%);
 
 }
 
@@ -139,6 +141,7 @@ input {
   overflow: hidden;
   background-color: #523468;
   border: 0.1px solid #b9bec9;
+  margin-top: 18px;
 }
 
 #sign-in-up {
@@ -256,4 +259,94 @@ li  span {
   flex-direction: row;
   justify-content: space-evenly;
   margin: 40px;
+}
+
+
+/* footer */
+
+#footer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #e6e6e6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  
+}
+
+#contact {
+  width: 300px;
+}
+
+#contact p {
+  margin-top: 20px;
+}
+
+#contact p a {
+  color: #db5138;
+  font-family: droid-sans, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  margin-right: 14px;
+}
+
+.brands img {
+  margin-right: 26px;
+  margin-top: 20px;
+  width: 20px;
+  margin-bottom: 25px;
+}
+
+.copyright {
+  font-family: inherit;
+  font-size: 14px;
+  color: #858381;
+  padding-bottom: 12px;
+}
+
+/* filtro para deixar os ícones na cor roxo */
+.filter-purple {
+  filter: invert(18%) sepia(11%) saturate(5642%) hue-rotate(242deg) brightness(98%) contrast(83%);
+}
+
+#newsletter {
+  background-color: #fff6da;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.newsletter-content {
+  width: 400px;
+  padding: 20px;
+}
+
+.newsletter-title {
+  font-family: droid-sans, sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  color:  #565a5f;
+  margin-bottom: 10px;
+}
+
+.newsletter-subtitle {
+  font-family: droid-sans, sans-serif;
+  color:  #565a5f;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+#email {
+  width: 30%;
+  margin-right: 8px;
+  border-radius: 5px;
+}
+
+#btn-submit {
+  width: 160px;
+  height: 38px;
+  background-color: #db5138;
+  color: #fff6da;
+  border: none;
+  border-radius: 5px;
 }
