@@ -22,16 +22,18 @@ font-style: normal;
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
+  position: relative;
   width: 100%;
   min-height: 100vh;
 }
 
 body {
   background-color: #fff6da;
-
+  z-index: 1;
 }
 
 /* container header */
@@ -71,12 +73,6 @@ body {
   font-style: italic;
 }
 
-
-/*
-#search-potion {
-
-}
-*/
 
  .search {
   position: relative;
@@ -248,7 +244,14 @@ li  span {
   transition: all 0.3s ease;
 }
 
+.potions {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, calc(100% / 4)));
+  gap: 64px;
+}
 
+/*
 .row-potion1 {
   display: flex;
   align-items: center;
@@ -265,7 +268,7 @@ li  span {
   justify-content: space-evenly;
   margin: 40px;
 }
-
+*/
 .potion-options img:hover {
   transform: scale(1.1);
 }
@@ -273,19 +276,39 @@ li  span {
 /* lightbox */
 .preview-box {
   position: fixed;
-  max-width: 700px;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.9);
   background: #ffffff;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  z-index: 999;
 }
+
+/*
+.preview-box .show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.3 ease;
+}
+*/
+
+.preview-box-active {
+  opacity: 1;
+  overflow-y: none;
+}
+
 
 .preview-box .preview-box-items {
   display: flex;
   width: 100%;
   padding: 10px;
 }
+
 
 .preview-box .preview-box-items .preview-box-current-img {
   width: 55%;
@@ -331,18 +354,20 @@ li  span {
   display: flex;
   justify-content: space-around;
   font-weight: 600;
+  cursor: pointer;
 }
 
 
 .close-button {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='53.7' height='53.7' viewBox='0 0 53.7 53.7'><path opacity='.6' fill='%23666E6E' d='M35.6 34.4L28 26.8l7.6-7.6c.2-.2.2-.5 0-.7l-.5-.5c-.2-.2-.5-.2-.7 0l-7.6 7.6-7.5-7.6c-.2-.2-.5-.2-.7 0l-.6.6c-.2.2-.2.5 0 .7l7.6 7.6-7.6 7.5c-.2.2-.2.5 0 .7l.5.5c.2.2.5.2.7 0l7.6-7.6 7.6 7.6c.2.2.5.2.7 0l.5-.5c.2-.2.2-.5 0-.7z'/></svg>");
+  /* background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='53.7' height='53.7' viewBox='0 0 53.7 53.7'><path opacity='.6' fill='%23666E6E' d='M35.6 34.4L28 26.8l7.6-7.6c.2-.2.2-.5 0-.7l-.5-.5c-.2-.2-.5-.2-.7 0l-7.6 7.6-7.5-7.6c-.2-.2-.5-.2-.7 0l-.6.6c-.2.2-.2.5 0 .7l7.6 7.6-7.6 7.5c-.2.2-.2.5 0 .7l.5.5c.2.2.5.2.7 0l7.6-7.6 7.6 7.6c.2.2.5.2.7 0l.5-.5c.2-.2.2-.5 0-.7z'/></svg>");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; */
   cursor: pointer;
   position: absolute;
   padding-left: 5px;
   width: 50px;
   height: 50px;
+  border: 1px solid red;
 }
 
 

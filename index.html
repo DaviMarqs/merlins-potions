@@ -16,218 +16,222 @@
 </head>
 
 <body>
-   <div class="container">
-    <header>
-        <div class="container-header">
-            <div class="merlins-potions">
-                <h2 class="logo"><span>MERLIN'S</span> POTIONS</h2>
-                <p class="subtitle"> <span>fines potions since 1026</span> </p>
+    <div class="container">
+        <header>
+            <div class="container-header">
+                <div class="merlins-potions">
+                    <h2 class="logo"><span>MERLIN'S</span> POTIONS</h2>
+                    <p class="subtitle"> <span>fines potions since 1026</span> </p>
+                </div>
+                <div>
+                    <label class="search">
+                        <input type="search" name="search-potion" id="search-potion" placeholder=" Search our stock">
+                    </label>
+                </div>
+                <div class="header-text">
+                    <span id="content1">Free shipping</span>
+                    <span id="content2">on orders over $50</span>
+                </div>
+                <div class="bag">
+                    <img src="assets/fontawnsome/icons/cauldron.png" alt="caldeirão">
+                    <p>BAG: X</p>
+                </div>
             </div>
-            <div>
-                <label class="search" >
-                    <input type="search" name="search-potion" id="search-potion" placeholder=" Search our stock">
-                </label>
-            </div>
-            <div class="header-text">
-                <span id="content1">Free shipping</span>
-                <span id="content2">on orders over $50</span>
-            </div>
-            <div class="bag">
-                <img src="assets/fontawnsome/icons/cauldron.png" alt="caldeirão">
-                <p>BAG: X</p>
+
+        </header>
+
+        <nav>
+            <ul id="menu">
+                <li id="potions">
+                    <div class="dropdown">
+                        <button class="dropbtn">Potions
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="ingredients">
+                    <div class="dropdown">
+                        <button class="dropbtn">Ingredients
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="books">
+                    <div class="dropdown">
+                        <button class="dropbtn">Books
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="supplies">
+                    <div class="dropdown">
+                        <button class="dropbtn">Supplies
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="charms">
+                    <div class="dropdown">
+                        <button class="dropbtn">Charms
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="cleareance"><a href="#">Clearance!</a></li>
+                <li id="sign-in-up"><a href="#">Sign In</a>
+                    <span>or</span>
+                    <a href="#">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <article>
+                <h2 class="title">Potions</h2>
+                <section class="potion-options">
+                    <section class="potions">
+                        <figure class="aging-potion image"><img src="assets/products/aging-potion.png" alt="aging potion">
+                            <h3>Nome da poção - $Preço da poção </h3>
+                        </figure>
+                        <figure class="bulgeye-potion image"><img src="assets/products/bulgeye-potion.png"
+                                alt=" bulgeye potion">
+                            <h3>Nome da poção - $Preço da poção </h3>
+                        </figure>
+                        <figure class="dragon-tonic image"><img src="assets/products/dragon-tonic.png" alt="dragon tonic">
+                            <h3>Nome da poção - $Preço da poção </h3>
+                        </figure>
+                        <figure class="love-potion image"><img src="assets/products/love-potion.png" alt="love potion">
+                            <h3>Nome da poção - $Preço da poção </h3>
+                        </figure>
+                        <figure class="polyjuice-potion image"><img src="assets/products/polyjuice-potion.png"
+                                alt="polyjuice potion">
+                            <h3>Nome da poção - $Preço da poção </h3>
+                        </figure>
+                        <figure class="sleeping-draught image"><img src="assets/products/sleeping-draught.png"
+                                alt="sleeping draught">
+                            <h3>Nome da poção - $Preço da poção </h3>
+                        </figure>
+                    </section>
+                </section>
+            </article>
+        </main>
+
+        <div class="preview-box">
+            <div class="preview-box-items">
+                <div class="preview-box-current-img">
+                    <img src="assets/products/aging-potion.png">
+                </div>
+                <div class="preview-box-current-details">
+                    <div class="preview-box-title">
+                        <h2>Aging Potion</h2>
+                    </div>
+
+                    <div class="effect-title">
+                        <h2>Use/Effect:</h2>
+                    </div>
+                    <div class="effect">
+                        <p>Causes the drinker to advance in age</p>
+                    </div>
+
+                    <div class="ingredients-title">
+                        <h2>Ingredients:</h2>
+                    </div>
+                    <div class="ingredients">
+                        <p>Red wine</p>
+                        <p>Prune juice</p>
+                        <p>Hairy fangus</p>
+                        <p>Tortoise Shell</p>
+                        <p>Caterpillar</p>
+                        <p>Bat tongue</p>
+                    </div>
+
+                    <div class="price-title">
+                        <h2>Price:</h2>
+                    </div>
+                    <div class="price">
+                        <span>$29,99</span>
+                    </div>
+
+                    <div class="add-to-cart">
+                        <input type="button" value="ADD TO CART">
+                    </div>
+                </div>
+                <button class="close-button" onclick="removePreview()">
+                    X
+                </button>
+
             </div>
         </div>
 
-    </header>
-
-    <nav>
-        <ul id="menu">
-            <li id="potions">
-                <div class="dropdown">
-                    <button class="dropbtn">Potions
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+        <footer>
+            <section id="footer-section">
+                <section id="contact">
+                    <p>
+                        <a href="#">COMPANY</a>
+                        <a href="#">CONTACT US</a>
+                        <a href="#">SHIPPING</a>
+                        <a href="#">RETURNS</a>
+                        <a href="#">CAREERS</a>
+                    </p>
+                    <div class="brands">
+                        <a href="#"><img src="assets/fontawnsome/icons/facebook-square.svg" class="filter-purple"
+                                alt="facebook-icon"></a>
+                        <a href="#"><img src="assets/fontawnsome/icons/twitter-square.svg" class="filter-purple"
+                                alt="facebook-icon"></a>
+                        <a href=""><img src="assets/fontawnsome/icons/pinterest-square.svg" class="filter-purple"
+                                alt="facebook-icon"></a>
+                        <a href=""><img src="assets/fontawnsome/icons/tumblr-square.svg" class="filter-purple"
+                                alt="facebook-icon"></a>
+                        <a href=""><img src="assets/fontawnsome/icons/google-plus-square.svg" class="filter-purple"
+                                alt="facebook-icon"></a>
                     </div>
-                </div>
-            </li>
 
-            <li id="ingredients">
-                <div class="dropdown">
-                    <button class="dropbtn">Ingredients
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                </div>
-            </li>
-
-            <li id="books">
-                <div class="dropdown">
-                    <button class="dropbtn">Books
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                </div>
-            </li>
-
-            <li id="supplies">
-                <div class="dropdown">
-                    <button class="dropbtn">Supplies
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                </div>
-            </li>
-            <li id="charms">
-                <div class="dropdown">
-                    <button class="dropbtn">Charms
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                </div>
-            </li>
-
-            <li id="cleareance"><a href="#">Clearance!</a></li>
-            <li id="sign-in-up"><a href="#">Sign In</a>
-                <span>or</span>
-                <a href="#">Sign Up</a>
-            </li>
-        </ul>
-    </nav>
-
-    <main>
-        <article>
-            <h2 class="title">Potions</h2>
-            <section class="potion-options">
-                <section class="row-potion1">
-                    <figure class="aging-potion"><img src="assets/products/aging-potion.png" alt="aging potion">
-                        <h3>Nome da poção - $Preço da poção </h3>
-                    </figure>
-                    <figure class="bulgeye-potion"><img src="assets/products/bulgeye-potion.png" alt=" bulgeye potion">
-                        <h3>Nome da poção - $Preço da poção </h3>
-                    </figure>
-                    <figure class="dragon-tonic"><img src="assets/products/dragon-tonic.png" alt="dragon tonic">
-                        <h3>Nome da poção - $Preço da poção </h3>
-                    </figure>
+                    <p class="copyright">© 2015 Merlin's Potions. All Rights Reserved</p>
                 </section>
-                <section class="row-potion2">
-                    <figure class="love-potion"><img src="assets/products/love-potion.png" alt="love potion">
-                        <h3>Nome da poção - $Preço da poção </h3>
-                    </figure>
-                    <figure class="polyjuice-potion"><img src="assets/products/polyjuice-potion.png"
-                    alt="polyjuice potion">
-                        <h3>Nome da poção - $Preço da poção </h3>
-                    </figure>
-                    <figure class="sleeping-draught"><img src="assets/products/sleeping-draught.png"
-                    alt="sleeping draught">
-                        <h3>Nome da poção - $Preço da poção </h3>
-                    </figure>
+
+                <section id="newsletter">
+                    <section class="newsletter-content">
+                        <p class="newsletter-title">Sign up for out Newsletter</p>
+                        <p class="newsletter-subtitle">Sign up for our newsletter & get exclusive discounts!</p>
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
+                        <input type="submit" id="btn-submit" value="SUBMIT">
+                    </section>
                 </section>
             </section>
-        </article>
-    </main>
+        </footer>
 
-    <div class="preview-box">
-        <div class="preview-box-items">
-            <div class="preview-box-current-img">
-                <img src="assets/products/aging-potion.png">
-            </div>
-            <div class="preview-box-current-details">
-                <div class="preview-box-title">
-                    <h2>Aging Potion</h2>
-                </div>
-
-                <div class="effect-title">
-                    <h2>Use/Effect:</h2>
-                </div>
-                <div class="effect">
-                    <p>Causes the drinker to advance in age</p>
-                </div>
-
-                <div class="ingredients-title">
-                    <h2>Ingredients:</h2>
-                </div>
-                <div class="ingredients">
-                    <p>Red wine</p>
-                    <p>Prune juice</p>
-                    <p>Hairy fangus</p>
-                    <p>Tortoise Shell</p>
-                    <p>Caterpillar</p>
-                    <p>Bat tongue</p>
-                </div>
-
-                <div class="price-title">
-                    <h2>Price:</h2>
-                </div>
-                <div class="price">
-                    <span>$29,99</span>
-                </div>
-
-                <div class="add-to-cart">
-                    <input type="button" value="ADD TO CART">
-                </div>
-            </div>
-            <div class="close-button">
-                
-            </div>
-        
-        </div>
     </div>
 
-    <footer>
-        <section id="footer-section">
-            <section id="contact">
-                <p>
-                    <a href="#">COMPANY</a>
-                    <a href="#">CONTACT US</a>
-                    <a href="#">SHIPPING</a>
-                    <a href="#">RETURNS</a>
-                    <a href="#">CAREERS</a>
-                </p>
-                <div class="brands">
-                    <a href="#"><img src="assets/fontawnsome/icons/facebook-square.svg" class="filter-purple" alt="facebook-icon"></a>
-                    <a href="#"><img src="assets/fontawnsome/icons/twitter-square.svg" class="filter-purple" alt="facebook-icon"></a>
-                    <a href=""><img src="assets/fontawnsome/icons/pinterest-square.svg" class="filter-purple" alt="facebook-icon"></a>
-                    <a href=""><img src="assets/fontawnsome/icons/tumblr-square.svg" class="filter-purple" alt="facebook-icon"></a>
-                    <a href=""><img src="assets/fontawnsome/icons/google-plus-square.svg" class="filter-purple" alt="facebook-icon"></a>
-                </div>
-
-                <p class="copyright">© 2015 Merlin's Potions. All Rights Reserved</p>
-            </section>
-            
-            <section id="newsletter">
-                <section class="newsletter-content">
-                    <p class="newsletter-title">Sign up for out Newsletter</p>
-                    <p class="newsletter-subtitle">Sign up for  our newsletter & get exclusive discounts!</p>
-                    <input type="email" name="email" id="email" placeholder="Enter your email">
-                    <input type="submit" id="btn-submit" value="SUBMIT">
-                </section>
-            </section>
-        </section>
-    </footer>
-
-   </div>
-
-   <script src="script/script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>
