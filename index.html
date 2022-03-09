@@ -37,11 +37,14 @@
                     <p>BAG: X</p>
                 </div>
             </div>
-
-        </header>
-
+            
         <nav>
-            <ul id="menu">
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul id="nav-list">
                 <li id="potions">
                     <div class="dropdown">
                         <button class="dropbtn">Potions
@@ -114,29 +117,31 @@
             </ul>
         </nav>
 
+        </header>
+
         <main>
             <article>
                 <h2 class="title">Potions</h2>
                 <section class="potion-options">
                     <section class="potions">
-                        <figure class="aging-potion image"><img src="assets/products/aging-potion.png" alt="aging potion">
+                        <figure class="aging-potion image" id="1"><img src="assets/products/aging-potion.png" alt="aging potion">
                             <h3>Nome da poção - $Preço da poção </h3>
                         </figure>
-                        <figure class="bulgeye-potion image"><img src="assets/products/bulgeye-potion.png"
+                        <figure class="bulgeye-potion image" id="2"><img src="assets/products/bulgeye-potion.png"
                                 alt=" bulgeye potion">
                             <h3>Nome da poção - $Preço da poção </h3>
                         </figure>
-                        <figure class="dragon-tonic image"><img src="assets/products/dragon-tonic.png" alt="dragon tonic">
+                        <figure class="dragon-tonic image" id="3"><img src="assets/products/dragon-tonic.png" alt="dragon tonic">
                             <h3>Nome da poção - $Preço da poção </h3>
                         </figure>
-                        <figure class="love-potion image"><img src="assets/products/love-potion.png" alt="love potion">
+                        <figure class="love-potion image" id="4"><img src="assets/products/love-potion.png" alt="love potion">
                             <h3>Nome da poção - $Preço da poção </h3>
                         </figure>
-                        <figure class="polyjuice-potion image"><img src="assets/products/polyjuice-potion.png"
+                        <figure class="polyjuice-potion image" id="5"><img src="assets/products/polyjuice-potion.png"
                                 alt="polyjuice potion">
                             <h3>Nome da poção - $Preço da poção </h3>
                         </figure>
-                        <figure class="sleeping-draught image"><img src="assets/products/sleeping-draught.png"
+                        <figure class="sleeping-draught image" id="6"><img src="assets/products/sleeping-draught.png"
                                 alt="sleeping draught">
                             <h3>Nome da poção - $Preço da poção </h3>
                         </figure>
@@ -148,37 +153,32 @@
         <div class="preview-box">
             <div class="preview-box-items">
                 <div class="preview-box-current-img">
-                    <img src="assets/products/aging-potion.png">
+                    <img id="potionImage" src="assets/products/aging-potion.png">
                 </div>
                 <div class="preview-box-current-details">
                     <div class="preview-box-title">
-                        <h2>Aging Potion</h2>
+                        <h2 id="potionTitle"></h2>
                     </div>
 
                     <div class="effect-title">
                         <h2>Use/Effect:</h2>
                     </div>
                     <div class="effect">
-                        <p>Causes the drinker to advance in age</p>
+                        <p id="potionEffect"></p>
                     </div>
 
                     <div class="ingredients-title">
                         <h2>Ingredients:</h2>
                     </div>
-                    <div class="ingredients">
-                        <p>Red wine</p>
-                        <p>Prune juice</p>
-                        <p>Hairy fangus</p>
-                        <p>Tortoise Shell</p>
-                        <p>Caterpillar</p>
-                        <p>Bat tongue</p>
+                    <div class="ingredients" id="potionIngredients">
+
                     </div>
 
                     <div class="price-title">
                         <h2>Price:</h2>
                     </div>
                     <div class="price">
-                        <span>$29,99</span>
+                        <span id="potionPrice"></span>
                     </div>
 
                     <div class="add-to-cart">
@@ -231,7 +231,7 @@
 
     </div>
 
-    <script src="script/script.js"></script>
+    <script src="script/script.js" defer></script>
 </body>
 
 </html>
