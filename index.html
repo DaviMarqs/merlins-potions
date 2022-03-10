@@ -22,6 +22,51 @@
     <div class="container">
         <header>
             <div class="container-header">
+                <img id="hamburguer-icon" onclick="openMenu()" src="assets/fontawnsome/icons/bars.svg">
+                <div id="menu-hamburguer">
+                    <ul class="nav-list-hamburguer">
+                        <li>
+                            <button id="closeHamburguer" onclick="closeMenu()">
+                                X
+                            </button>
+                            <div>
+                                <label>
+                                    <input type="search" placeholder="Search our stock">
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropbtn">
+                                Potions
+                            </button>
+                        </li>
+                        <li>
+                            <button class="dropbtn">
+                                Ingredients
+                            </button>
+                        </li>
+                        <li>
+                            <button class="dropbtn">
+                                Books
+                            </button>
+                        </li>
+                        <li>
+                            <button class="dropbtn">
+                                Supplies
+                            </button>
+                        </li>
+                        <li>
+                            <button class="dropbtn">
+                                Charms
+                            </button>
+                        </li>
+                        <li><a href="#">Clearance!</a></li>
+                        <li class="login-box"><a href="#">Sign In</a>
+                            <span>or</span>
+                            <a href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="merlins-potions">
                     <h2 class="logo"><span>MERLIN'S</span> POTIONS</h2>
                     <p class="subtitle"> <span>fines potions since 1026</span> </p>
@@ -40,94 +85,87 @@
                     <p>BAG: <span id="cartItem"></span></p>
                 </div>
             </div>
-            
-        <nav>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <ul id="nav-list">
-                <li id="potions">
-                    <div class="dropdown">
-                        <button class="dropbtn">Potions
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">Aging Potion</a>
-                            <a href="#">Bulgeye Potion</a>
-                            <a href="#">Dragon Tonic</a>
-                            <a href="#">Love Potion</a>
-                            <a href="#">Polyjuice Potion</a>
-                            <a href="#">Sleeping Draught</a>
+            <nav>
+                <ul id="nav-list">
+                    <li id="potions">
+                        <div class="dropdown">
+                            <button class="dropbtn">Potions
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Aging Potion</a>
+                                <a href="#">Bulgeye Potion</a>
+                                <a href="#">Dragon Tonic</a>
+                                <a href="#">Love Potion</a>
+                                <a href="#">Polyjuice Potion</a>
+                                <a href="#">Sleeping Draught</a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-
-                <li id="ingredients">
-                    <div class="dropdown">
-                        <button class="dropbtn">Ingredients
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">Red Wine</a>
-                            <a href="#">Caterpillar</a>
-                            <a href="#">Eel eyes</a>
-                            <a href="#">And more...</a>
+                    </li>
+    
+                    <li id="ingredients">
+                        <div class="dropdown">
+                            <button class="dropbtn">Ingredients
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Red Wine</a>
+                                <a href="#">Caterpillar</a>
+                                <a href="#">Eel eyes</a>
+                                <a href="#">And more...</a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-
-                <li id="books">
-                    <div class="dropdown">
-                        <button class="dropbtn">Books
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">Book of Potions</a>
-                            <a href="#">Spell potions</a>
-                            <a href="#">One Thousand Magical Herbs and Fungi</a>
-                            <a href="#">Magical Drafts and Potions</a>
-                            <a href="#">And more...</a>
+                    </li>
+    
+                    <li id="books">
+                        <div class="dropdown">
+                            <button class="dropbtn">Books
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Book of Potions</a>
+                                <a href="#">Spell potions</a>
+                                <a href="#">One Thousand Magical Herbs and Fungi</a>
+                                <a href="#">Magical Drafts and Potions</a>
+                                <a href="#">And more...</a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-
-                <li id="supplies">
-                    <div class="dropdown">
-                        <button class="dropbtn">Supplies
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">Spider eyes</a>
-                            <a href="#">Blaze Powder</a>
-                            <a href="#">Glowstone Dust</a>
-                            <a href="#">And more...</a>
+                    </li>
+    
+                    <li id="supplies">
+                        <div class="dropdown">
+                            <button class="dropbtn">Supplies
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Spider eyes</a>
+                                <a href="#">Blaze Powder</a>
+                                <a href="#">Glowstone Dust</a>
+                                <a href="#">And more...</a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li id="charms">
-                    <div class="dropdown">
-                        <button class="dropbtn">Charms
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">Love charm</a>
-                            <a href="#">Youth charm</a>
-                            <a href="#">Charm of intelligence</a>
-                            <a href="#">And more...</a>
+                    </li>
+                    <li id="charms">
+                        <div class="dropdown">
+                            <button class="dropbtn">Charms
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Love charm</a>
+                                <a href="#">Youth charm</a>
+                                <a href="#">Charm of intelligence</a>
+                                <a href="#">And more...</a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-
-                <li id="cleareance"><a href="#">Clearance!</a></li>
-                <li id="sign-in-up"><a href="#">Sign In</a>
-                    <span>or</span>
-                    <a href="#">Sign Up</a>
-                </li>
-            </ul>
-        </nav>
-
+                    </li>
+    
+                    <li id="cleareance"><a href="#">Clearance!</a></li>
+                    <li id="sign-in-up"><a href="#">Sign In</a>
+                        <span>or</span>
+                        <a href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <main>
@@ -135,17 +173,20 @@
                 <h2 class="title">Potions</h2>
                 <section class="potion-options">
                     <section class="potions">
-                        <figure class="aging-potion image" id="1"><img src="assets/products/aging-potion.png" alt="aging potion">
+                        <figure class="aging-potion image" id="1"><img src="assets/products/aging-potion.png"
+                                alt="aging potion">
                             <h3>Aging Potion - <span>$29.99</span></h3>
                         </figure>
                         <figure class="bulgeye-potion image" id="2"><img src="assets/products/bulgeye-potion.png"
                                 alt=" bulgeye potion">
                             <h3>Bulgeye Potion - <span>$19.99</span></h3>
                         </figure>
-                        <figure class="dragon-tonic image" id="3"><img src="assets/products/dragon-tonic.png" alt="dragon tonic">
+                        <figure class="dragon-tonic image" id="3"><img src="assets/products/dragon-tonic.png"
+                                alt="dragon tonic">
                             <h3>Dragon Tonic - <span>$64.99</span></h3>
                         </figure>
-                        <figure class="love-potion image" id="4"><img src="assets/products/love-potion.png" alt="love potion">
+                        <figure class="love-potion image" id="4"><img src="assets/products/love-potion.png"
+                                alt="love potion">
                             <h3>Love Potion - <span>$29.99</span></h3>
                         </figure>
                         <figure class="polyjuice-potion image" id="5"><img src="assets/products/polyjuice-potion.png"
@@ -244,6 +285,7 @@
 
     <script src="script/modal.js" defer></script>
     <script src="script/cartItem.js"></script>
+    <script src="script/hamburguer-menu.js"></script>
 </body>
 
 </html>

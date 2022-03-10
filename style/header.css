@@ -69,7 +69,7 @@ body {
     filter: invert(32%) sepia(77%) saturate(904%) hue-rotate(333deg) brightness(110%) contrast(88%);
 }
 
-input {
+.search input {
     padding: 10px 16px;
 }
 
@@ -107,7 +107,14 @@ input {
 }
 
 /* nav bar */
-    li a {
+
+#hamburguer-icon {
+    display: none;
+    width: 20px;
+}
+
+
+#nav-list li a {
     display: flex;
     color: #b9bec9;
     text-align: center;
@@ -209,4 +216,88 @@ li  span {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* mobile */
+@media (max-width: 1024px) {
+    #hamburguer-icon {
+        display: block;
+    }
+
+    #nav-list {
+        display: none;
+    }
+
+    .header-text {
+        display: none;
+    }
+    
+    .search {
+        display: none;
+    }
+
+    #menu-hamburguer {
+        display: none;
+    }
+}
+
+
+#menu-hamburguer ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff6da;
+    list-style: none;
+    font-family: droid-sans, sans-serif;
+
+}
+
+#menu-hamburguer ul li:nth-child(1){
+    display: flex;
+    width: 100%;
+    background-color: #fff6da;
+}
+
+#menu-hamburguer ul li:nth-child(1) button{
+    margin-right: 1rem;
+    color: #27053f;
+    font-size: 16px;
+}
+
+#menu-hamburguer ul li:nth-child(1) input {
+    width: 70vw;
+    padding: 8px 16px;
+}
+
+#menu-hamburguer li {
+    background-color: #523468;
+    padding: 1rem 0;
+    padding-left: 2rem;
+    font-style: italic;
+}
+
+#menu-hamburguer li button {
+    background: unset;
+    border:  none;
+    color: #b9bec9;
+    font-family: droid-sans, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+#menu-hamburguer li a {
+    text-decoration: none;
+    color: #b9bec9;
+}
+
+#menu-hamburguer .login-box {
+    display: flex;
+    justify-content: center;
+}
+
+#menu-hamburguer .login-box span {
+    margin: 0 1rem;
 }

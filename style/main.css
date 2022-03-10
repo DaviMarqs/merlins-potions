@@ -52,6 +52,10 @@ body {
     padding-bottom: 10vh;
 }
 
+.potion-options .potions h3 {
+    white-space: nowrap;
+}
+
 .potion-options .potions h3 span {
     color: #db5138;
 }
@@ -137,6 +141,7 @@ body {
     font-weight: 600;
     cursor: pointer;
 }
+
 .preview-box .preview-box-items .preview-box-current-details .add-to-cart input:hover{
     cursor: pointer;
     background-color: #a5331f;
@@ -152,4 +157,11 @@ body {
     color: #db5138;
     font-size: 16px;
     font-weight: bold;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+.title {
+    text-align: center;
+}
 }
