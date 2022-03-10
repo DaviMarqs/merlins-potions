@@ -1,4 +1,3 @@
-
 const potions = Array.from(document.querySelectorAll('.image'));
 const previewBox = document.querySelector(".preview-box");
 
@@ -24,7 +23,8 @@ function activeModal(event) {
             potion.ingredients.map(item => {
                 potionIngredients.innerHTML += `<p>${item}</p>`
             })
-            potionPrice.innerText = potion.price
+            potionPrice.innerText = "$" + potion.price
             previewBox.classList.add('preview-box-active')
         })
 }
+

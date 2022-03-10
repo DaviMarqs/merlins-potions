@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merlin's Potions</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="https://use.typekit.net/uyy5sky.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,9 +54,12 @@
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="#">Aging Potion</a>
+                            <a href="#">Bulgeye Potion</a>
+                            <a href="#">Dragon Tonic</a>
+                            <a href="#">Love Potion</a>
+                            <a href="#">Polyjuice Potion</a>
+                            <a href="#">Sleeping Draught</a>
                         </div>
                     </div>
                 </li>
@@ -64,9 +70,10 @@
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="#">Red Wine</a>
+                            <a href="#">Caterpillar</a>
+                            <a href="#">Eel eyes</a>
+                            <a href="#">And more...</a>
                         </div>
                     </div>
                 </li>
@@ -77,9 +84,11 @@
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="#">Book of Potions</a>
+                            <a href="#">Spell potions</a>
+                            <a href="#">One Thousand Magical Herbs and Fungi</a>
+                            <a href="#">Magical Drafts and Potions</a>
+                            <a href="#">And more...</a>
                         </div>
                     </div>
                 </li>
@@ -90,9 +99,10 @@
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="#">Spider eyes</a>
+                            <a href="#">Blaze Powder</a>
+                            <a href="#">Glowstone Dust</a>
+                            <a href="#">And more...</a>
                         </div>
                     </div>
                 </li>
@@ -102,9 +112,10 @@
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="#">Love charm</a>
+                            <a href="#">Youth charm</a>
+                            <a href="#">Charm of intelligence</a>
+                            <a href="#">And more...</a>
                         </div>
                     </div>
                 </li>
@@ -125,25 +136,25 @@
                 <section class="potion-options">
                     <section class="potions">
                         <figure class="aging-potion image" id="1"><img src="assets/products/aging-potion.png" alt="aging potion">
-                            <h3>Nome da poção - $Preço da poção </h3>
+                            <h3>Aging Potion - <span>$29.99</span></h3>
                         </figure>
                         <figure class="bulgeye-potion image" id="2"><img src="assets/products/bulgeye-potion.png"
                                 alt=" bulgeye potion">
-                            <h3>Nome da poção - $Preço da poção </h3>
+                            <h3>Bulgeye Potion - <span>$19.99</span></h3>
                         </figure>
                         <figure class="dragon-tonic image" id="3"><img src="assets/products/dragon-tonic.png" alt="dragon tonic">
-                            <h3>Nome da poção - $Preço da poção </h3>
+                            <h3>Dragon Tonic - <span>$64.99</span></h3>
                         </figure>
                         <figure class="love-potion image" id="4"><img src="assets/products/love-potion.png" alt="love potion">
-                            <h3>Nome da poção - $Preço da poção </h3>
+                            <h3>Love Potion - <span>$29.99</span></h3>
                         </figure>
                         <figure class="polyjuice-potion image" id="5"><img src="assets/products/polyjuice-potion.png"
                                 alt="polyjuice potion">
-                            <h3>Nome da poção - $Preço da poção </h3>
+                            <h3>Polyjuice Potion - <span>$99.99</span></h3>
                         </figure>
                         <figure class="sleeping-draught image" id="6"><img src="assets/products/sleeping-draught.png"
                                 alt="sleeping draught">
-                            <h3>Nome da poção - $Preço da poção </h3>
+                            <h3>Sleeping Draught - <span>$29.99</span></h3>
                         </figure>
                     </section>
                 </section>
@@ -182,7 +193,7 @@
                     </div>
 
                     <div class="add-to-cart">
-                        <input type="button" value="ADD TO CART">
+                        <input type="button" class="addItem" value="ADD TO CART">
                     </div>
                 </div>
                 <button class="close-button" onclick="removePreview()">
@@ -231,7 +242,7 @@
 
     </div>
 
-    <script src="script/script.js" defer></script>
+    <script src="script/modal.js" defer></script>
 </body>
 
 </html>
