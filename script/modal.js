@@ -27,4 +27,3 @@ function activeModal(event) {
             previewBox.classList.add('preview-box-active')
         })
 }
-

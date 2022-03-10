@@ -93,8 +93,8 @@ input {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-style: normal;
-    color: #d1d2d4;
+    color: #969aa0;
+    font-size: 16px;
 }
 
 .bag img {
@@ -102,6 +102,9 @@ input {
     margin: 20px;
 }
 
+.bag #cartItem {
+    font-weight: 600;
+}
 
 /* nav bar */
     li a {

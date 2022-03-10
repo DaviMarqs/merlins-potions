@@ -37,7 +37,7 @@
                 </div>
                 <div class="bag">
                     <img src="assets/fontawnsome/icons/cauldron.png" alt="caldeirão">
-                    <p>BAG: X</p>
+                    <p>BAG: <span id="cartItem"></span></p>
                 </div>
             </div>
             
@@ -193,7 +193,7 @@
                     </div>
 
                     <div class="add-to-cart">
-                        <input type="button" class="addItem" value="ADD TO CART">
+                        <input type="button" class="addItem" onclick="addItem()" value="ADD TO CART">
                     </div>
                 </div>
                 <button class="close-button" onclick="removePreview()">
@@ -243,6 +243,7 @@
     </div>
 
     <script src="script/modal.js" defer></script>
+    <script src="script/cartItem.js"></script>
 </body>
 
 </html>
