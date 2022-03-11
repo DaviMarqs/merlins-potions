@@ -46,7 +46,7 @@ body {
 .potions {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(200px, calc(100% / 4)));
+    grid-template-columns: repeat(auto-fit, minmax(135px, calc(100% / 4)));
     gap: 64px;
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -73,6 +73,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 10;
 }
 
 .preview-box-active {
@@ -131,7 +132,9 @@ body {
 }
 
 .preview-box .preview-box-items .preview-box-current-details .add-to-cart input {
-    width: 140px;
+   
+    width: 180px;
+    height: 6vh;
     background-color: #db5138;
     color: #fff6da;
     border-radius: 5px;
@@ -153,7 +156,7 @@ body {
     width: 50px;
     height: 50px;
     border: none;
-    background-color: inherit;
+    background-color: transparent;
     color: #db5138;
     font-size: 16px;
     font-weight: bold;

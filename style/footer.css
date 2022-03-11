@@ -92,9 +92,11 @@ body {
 }
 
 #email {
-    width: 10rem;
+    width: 18vw;
+    height: 7vh;
     margin-right: 8px;
     border-radius: 5px;
+    padding: 1rem;
 }
 
 #btn-submit {
@@ -110,3 +112,52 @@ body {
     cursor: pointer;
     background-color: #a5331f;
 }
+
+
+/* mobile */
+@media (max-width: 768px) {
+    #footer-section {
+        flex-direction: column-reverse;
+    }
+
+    #newsletter {
+        width: 24rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #links a {
+        display: none;
+    }
+
+    #contact {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .brands {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .brands a img {
+        margin-right: 0;
+    }
+
+    .copyright {
+        font-size: 16px;
+    }
+
+    }
+
+
+
+    #email {
+        width: 180px;
+    }
+
+    #btn-submit {
+        width: 150px;
+    }
+
+    
