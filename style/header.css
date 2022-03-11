@@ -108,6 +108,23 @@ body {
 
 /* nav bar */
 
+.hamburguer-div {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.mobile-message {
+    display: none;
+    background-color: #e6e6e6;
+    color: #969aa0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-family: droid-sans, sans-serif;
+    font-style: italic;
+}
+
 #hamburguer-icon {
     display: none;
     width: 20px;
@@ -143,7 +160,8 @@ body {
     justify-content: flex-end;
     align-items: center;
     gap: 2px;
-    margin-left:15%;
+    margin-left:auto;
+    margin-right:auto;
     font-family: droid-sans, sans-serif;
     font-style: italic;
 }
@@ -189,6 +207,7 @@ li  span {
     font-family: droid-sans, sans-serif;
     font-style: italic;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
@@ -225,13 +244,17 @@ li  span {
 }
 
 /* mobile */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     #hamburguer-icon {
         display: block;
     }
 
     #nav-list {
         display: none;
+    }
+
+    .mobile-message {
+        display: block;
     }
 
     .header-text {
@@ -248,6 +271,24 @@ li  span {
 
     .bag {
         flex-direction: column;
+    }
+
+    .hamburguer-div {
+        padding-left: 4.5rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 440px) {
+    .hamburguer-div {
+        padding-left: 1.5rem;
+        padding-right: 3rem;
     }
 }
 
